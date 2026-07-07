@@ -22,7 +22,7 @@ Islamabad, like most rapidly urbanizing cities, lacks affordable real-time AQI m
 │   ├── AQI_Predictive_Analysis.ipynb   # ML pipeline: EDA, correlation, model training/evaluation
 │   └── readme.md
 ├── data/
-│   ├── Node1.csv                        # Raw/processed sensor data collected from Node 1
+│   ├── Node1.csv                        # Raw sensor data collected from Node 1
 │   └── readme.md
 ├── docs/
 │   └── THESIS_FYP_REPORT[Final].pdf     # Full thesis report (design, implementation, results)
