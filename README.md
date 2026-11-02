@@ -36,7 +36,7 @@ flowchart LR
     S3[MQ-135<br/>SO₂] --> E
     E[ESP32 node<br/>RTC memory keeps 24 h history] --> O[SSD1306 OLED<br/>live values + AQI]
     E -->|Wi-Fi, MQTT, JSON| A[AWS IoT Core<br/>database]
-    E -->|Wi-Fi| B[Blynk IoT<br/>dashboards]
+    E -->|Wi-Fi, MQTT, JSON| B[Blynk IoT<br/>dashboards]
     E -->|no Wi-Fi: SIM800L SMS| P[Authorised phone numbers]
     A --> M[Python ML analysis<br/>CSV export]
 ```
