@@ -172,9 +172,8 @@ jupyter notebook analytics/src/AQI_Predictive_Analysis.ipynb
 
 ## Limitations
 
-- **This is AQI regression, not future forecasting.** The models predict `Total_AQI` from the pollutant readings of the same hour, while the AQI itself is a time-weighted blend of the last 24 hours of those pollutants. That is why a single hour's readings explain only about 80% of the variance (R² ≈ 0.80) and not close to 100%. Adding lagged features, or using a time-series model, would both improve the fit and allow real forecasting of future AQI.
-- **Tree models overfit moderately** (train R² 0.94–0.98 vs test 0.80), and there is a single chronological hold-out, so the scores are indicative rather than final.
-- **One node, one location, one season** (spring into early summer), so results may not transfer elsewhere.
+ The models predict `Total_AQI` from the pollutant readings of the same hour, while the AQI itself is a time-weighted blend of the last 24 hours of those pollutants. That is why a single hour's readings explain only about 80% of the variance (R² ≈ 0.80) and not close to 100%. Adding lagged features, or using a time-series model, would both improve the fit and allow real forecasting of future AQI.
+- **2 nodes, 2 location, one season** (spring into early summer), so results may not transfer elsewhere.
 - **Low-cost sensors** drift and respond to temperature and humidity.
 - **MQ-135 is a broad-spectrum gas sensor** that responds to several gases, so its SO₂ values should be treated as estimates.
 - The ~97.5% battery saving is an theoretical estimate, not a measured runtime.
