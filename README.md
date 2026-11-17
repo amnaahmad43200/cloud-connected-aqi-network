@@ -189,6 +189,4 @@ jupyter notebook analytics/src/AQI_Predictive_Analysis.ipynb
 
 **SDG 3** Good Health and Well-being · **SDG 11** Sustainable Cities and Communities · **SDG 13** Climate Action · **SDG 17** Partnerships for the Goals
 
-## Contact
 
-Amna Ahmad · `[email]` · `[LinkedIn]`
